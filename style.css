@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff8f0;
+    color: #333;
+}
+
+/* Navigation */
+
+header {
+    background: #3b1f16;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #f5c16c;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5c16c;
+}
+
+/* Home */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f3d7b3;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h2 {
+    font-size: 52px;
+    color: #3b1f16;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #3b1f16;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #5a3022;
+}
+
+/* About */
+
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    font-size: 36px;
+    color: #3b1f16;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Menu */
+
+.menu {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu-item {
+    width: 250px;
+    padding: 28px 22px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item h3 {
+    color: #3b1f16;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.menu-item p {
+    margin-bottom: 15px;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #b06b32;
+    font-size: 20px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f3d7b3;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 6px;
+    background: #3b1f16;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background: #5a3022;
+}
+
+/* Footer */
+
+footer {
+    padding: 22px;
+    text-align: center;
+    background: #3b1f16;
+    color: white;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .menu-item {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+/* Why Choose Us */
+
+.why-us {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fff8f0;
+}
+
+.why-us h2 {
+    font-size: 36px;
+    color: #3b1f16;
+    margin-bottom: 35px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.why-card {
+    width: 280px;
+    padding: 30px 22px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.why-card h3 {
+    color: #3b1f16;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.why-card p {
+    font-size: 16px;
+}
+.order-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #b06b32;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background: #3b1f16;
+}
